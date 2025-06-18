@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tienda – Dulce Sabor</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="js/carrito.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dulce Sabor</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Nuestros Pasteles</h2>
+
+      <div class="tienda-layout">
+        <!-- Columna izquierda: Productos -->
+        <div class="productos">
+          <!-- Cada pastel -->
+          <div class="producto">
+            <img src="img/imagenespastel-chocolate.jpg.png" alt="Pastel de Chocolate" />
+            <h3>Pastel de Chocolate</h3>
+            <p class="precio">$15.00</p>
+            <p class="descripcion">Bizcocho húmedo de cacao puro con cobertura de chocolate derretido.</p>
+            <button>Hacer pedido</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/img fresa.png" alt="Pastel de Fresa" />
+            <h3>Pastel de Fresa</h3>
+            <p class="precio">$16.00</p>
+            <p class="descripcion">Pastel suave con trozos de fresa natural y crema chantilly artesanal.</p>
+            <button>Hacer pedido</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/imgvainilla jpg.png" alt="Pastel de Vainilla" />
+            <h3>Pastel de Vainilla</h3>
+            <p class="precio">$12.50</p>
+            <p class="descripcion">Pastel esponjoso con sabor a vainilla natural.</p>
+            <button>Hacer pedido</button>
+          </div>
+
+          <div class="producto">
+            <img src="img/img pastel frutas.png" alt="Pastel de Frutas" />
+            <h3>Pastel de Frutas</h3>
+            <p class="precio">$16.00</p>
+            <p class="descripcion">Frutas frescas y crema sobre una base esponjosa.</p>
+            <button>Hacer pedido</button>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Carrito -->
+        <aside id="carrito">
+          <h2>Carrito de Compras</h2>
+          <ul id="lista-carrito"></ul>
+          <p>Subtotal: $<span id="subtotal">0.00</span></p>
+          <p>IVA (15%): $<span id="iva">0.00</span></p>
+          <p>Total: $<span id="total">0.00</span></p>
+          <button id="realizar-pedido">Realizar Pedido</button>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+    </footer>
+  </div>
+</body>
+</html>
