@@ -2,13 +2,18 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dulce Sabor</title>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Dulce Sabor</h1>
+      <!-- Header con logo redondeado -->
+      <header class="header-logo">
+        <div class="logo-nombre">
+          <img src="img/logo.jpg" alt="Logo Dulce Sabor" class="logo-redondo">
+          <h1>Dulce Sabor</h1>
+        </div>
         <nav>
           <a href="index.html">Inicio</a>
           <a href="tienda.html">Tienda</a>
@@ -16,41 +21,70 @@
         </nav>
       </header>
 
+      <!-- Banner Principal -->
+      <section class="hero">
+        <div class="hero-texto">
+          <h2>Pasteles que enamoran</h2>
+          <p>Hechos con amor y los mejores ingredientes. ¡Endulza tu día!</p>
+        </div>
+      </section>
+
       <main>
-        <section>
+        <!-- Introducción -->
+        <section class="intro">
           <h2>Bienvenidos a Dulce Sabor</h2>
-          <p>Descubre los pasteles más deliciosos y hechos con amor, desde un pequeño emprendimiento con grandes sueños.</p>
+          <p>Descubre los pasteles más deliciosos, elaborados con amor desde un pequeño emprendimiento con grandes sueños.</p>
         </section>
-      
-        <section>
-          <h2>Sobre mí</h2>
-          <p>
-            ¡Hola! Soy Melanie y fundadora de Dulce Sabor. Este proyecto nace de mi pasión por la repostería y mis ganas de emprender mientras continúo con mis estudios. Cada pastel es preparado con dedicación y el deseo de brindar alegría a quienes lo prueban.
-          </p>
+
+        <!-- Sobre mí con imagen -->
+        <section class="sobre-mi">
+          <div class="contenido-sobre-mi">
+            <div class="texto">
+              <h2>Sobre mí</h2>
+              <p>
+                ¡Hola! Soy Melanie, fundadora de Dulce Sabor. Este proyecto nace de mi pasión por la repostería y mis ganas de emprender mientras continúo mis estudios. Cada pastel está preparado con dedicación y el deseo de brindar alegría.
+              </p>
+            </div>
+            <img src="img/melanie.jpg" alt="Foto de Melanie" class="img-fundadora">
+          </div>
         </section>
-      
-        <section>
-          <h2>¿Por qué Dulce Sabor?</h2>
-          <p>
-            Porque creo que un buen pastel no solo endulza el paladar, sino también el corazón. Aquí encontrarás opciones artesanales, caseras y accesibles, ideales para cualquier ocasión.
-          </p>
+
+        <!-- Diferenciales con fotos -->
+        <section class="diferenciales">
+          <h2>¿Por qué elegir Dulce Sabor?</h2>
+          <div class="galeria-pasteles">
+            <div class="item">
+              <img src="img/img ret velet.png" alt="Pastel decorado" />
+              <p>Pasteles artesanales únicos</p>
+            </div>
+            <div class="item">
+              <img src="img/img fresa.png" alt="Pastel personalizado" />
+              <p>Decoraciones personalizadas</p>
+            </div>
+            <div class="item">
+              <img src="img/img pastel frutas.png" alt="Pastel de cumpleaños" />
+              <p>Perfectos para cualquier ocasión</p>
+            </div>
+          </div>
         </section>
-      
-        <section>
-          <h2>Misión</h2>
-          <p>
-            Ofrecer pasteles caseros de excelente calidad, hechos con ingredientes frescos, accesibles para todos, y preparados con pasión y responsabilidad.
-          </p>
-        </section>
-      
-        <section>
-          <h2>Visión</h2>
-          <p>
-            Convertirme en una emprendedora reconocida, llevando Dulce Sabor a más personas y demostrando que los sueños sí se cumplen, incluso mientras se estudia.
-          </p>
+
+        <!-- Misión y Visión extendidas -->
+        <section class="mision-vision">
+          <div class="mision">
+            <h2>Misión</h2>
+            <p>
+              En Dulce Sabor, nuestra misión es ofrecer pasteles caseros de excelente calidad, elaborados con ingredientes frescos y seleccionados con esmero. Queremos que cada cliente experimente el placer de un producto artesanal, accesible y hecho con amor, cuidando cada detalle desde la preparación hasta la entrega.
+            </p>
+          </div>
+          <div class="vision">
+            <h2>Visión</h2>
+            <p>
+              Aspiramos a crecer como emprendimiento reconocido en nuestra comunidad, expandiendo nuestra propuesta sin perder el toque casero y cercano. Nuestro sueño es demostrar que es posible alcanzar grandes metas mientras se estudia, trabajando con responsabilidad, pasión y creatividad.
+            </p>
+          </div>
         </section>
       </main>
-      
+
       <footer>
         <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
       </footer>

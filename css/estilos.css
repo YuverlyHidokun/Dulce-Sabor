@@ -223,3 +223,162 @@ form button:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Hero Banner */
+.hero {
+  background-image: url('../img/banner-pastel.jpg'); /* imagen sugerida */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-texto {
+  background-color: rgba(255, 248, 240, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #4b2e2e;
+}
+
+/* Secciones personalizadas */
+.intro, .sobre-mi, .diferenciales, .mision-vision {
+  background-color: #fff7f3;
+  border: 1px solid #f4d3c2;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
+}
+
+.diferenciales ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.diferenciales li {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #c94c4c;
+}
+
+.mision-vision {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mision, .vision {
+  flex: 1;
+}
+
+/* Header con logo */
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4d3c2;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-redondo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sobre mí con imagen */
+.contenido-sobre-mi {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenido-sobre-mi .texto {
+  flex: 1;
+}
+
+.img-fundadora {
+  width: 220px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Galería de pasteles */
+.galeria-pasteles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.galeria-pasteles .item {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.galeria-pasteles img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5em;
+}
+
+/* Misión y Visión extendidas */
+.mision-vision {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.mision, .vision {
+  background-color: #fff7f3;
+  border: 1px solid #f4d3c2;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .galeria-pasteles {
+    flex-direction: column;
+  }
+
+  .logo-nombre {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .header-logo nav {
+    width: 100%;
+    text-align: center;
+  }
+}
